@@ -1,5 +1,5 @@
 [options]
-addons_path = /home/osmaralg/AachenV/odoo/addons
+addons_path = /Users/mianh/Documents/Mulino/odoo/addons/
 admin_passwd = admin
 csv_internal_sep = ,
 data_dir = /home/osmaralg/.local/share/Odoo
