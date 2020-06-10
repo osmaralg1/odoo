@@ -1,5 +1,5 @@
 [options]
-addons_path = /Users/mianh/Documents/Mulino/odoo/addons/
+addons_path = /home/osmaralg/AachenV/odoo/mulino,/home/osmaralg/AachenV/odoo/odoo/addons,/home/osmaralg/.local/share/Odoo/addons/13.0,/home/osmaralg/AachenV/odoo/addons
 admin_passwd = admin
 csv_internal_sep = ,
 data_dir = /home/osmaralg/.local/share/Odoo
@@ -59,4 +59,5 @@ unaccent = False
 upgrade_path = 
 without_demo = False
 workers = 0
+
 
