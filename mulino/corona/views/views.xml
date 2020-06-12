@@ -18,10 +18,30 @@
     </record>
 
 
+    <record model="ir.ui.view" id="corona.form1">
+      <field name="name">corona form</field>
+      <field name="model">corona.corona</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name" >Name </field>
+            <field name="email">Email </field>
+            <field name="telephone"> Telephone </field>
+          </group>
+          <group>
+            <field name="timeFrom"> TimeFrom </field>
+            <field name="timeTo" > TimeTo </field>
+            
+
+          </group>
+        </form>
+      </field>
+    </record>
+
     <!-- actions opening views on models -->
 
     <record model="ir.actions.act_window" id="corona.action_window">
-      <field name="name">corona window</field>
+      <field name="name">Anmeldung Mulino</field>
       <field name="res_model">corona.corona</field>
       <field name="view_mode">tree,form</field>
     </record>
@@ -47,16 +67,14 @@
     <menuitem name="corona" id="corona.menu_root"/>
 
     <!-- menu categories -->
-
+  
     <menuitem name="Menu 1" id="corona.menu_1" parent="corona.menu_root"/>
-    <menuitem name="Menu 2" id="corona.menu_2" parent="corona.menu_root"/>
+
 
     <!-- actions -->
 
     <menuitem name="List" id="corona.menu_1_list" parent="corona.menu_1"
               action="corona.action_window"/>
-    <menuitem name="Server to list" id="corona" parent="corona.menu_2"
-              action="corona.action_server"/>
 
   </data>
 </odoo>
